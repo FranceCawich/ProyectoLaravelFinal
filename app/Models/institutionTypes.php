@@ -8,4 +8,9 @@ use Illuminate\Database\Eloquent\Model;
 class institutionTypes extends Model
 {
     use HasFactory;
+
+    protected $fillable = ['tipo',];
+    public function participants(){
+        return $this->belongsToMany(Participant::class);
+    }
 }
