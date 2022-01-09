@@ -38,8 +38,8 @@
                 <label for="text">fechaInicio</label>
                 <input type="date" class="form-control" name="fechaInicio" />
 
-                <label for="text">fechaFIn</label>
-                <input type="date" class="form-control" name="fechaInicio" />
+                <label for="text">fechaFin</label>
+                <input type="date" class="form-control" name="fechaFin" />
             </div>
             <button type="submit" class="btn btn-block btn-success">Crear evento</button>
         </form>

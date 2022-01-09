@@ -1,4 +1,4 @@
-@extends('layouts.default')
+@extends('layouts.app')
 
 @section('content')
 
@@ -39,12 +39,12 @@
             <br>
             <div class="form-group">
                 <label for="email">FechaInicio</label>
-                <input type="text" class="form-control" name="fechaInicio" value="{{ $eventos-> fechaInicio }}" />
+                <input type="Date" class="form-control" name="fechainicio" value="{{ $eventos-> fechaInicio }}" />
             </div>
             <br>
             <div class="form-group">
                 <label for="email">Fechafin</label>
-                <input type="text" class="form-control" name="fechafin" value="{{ $eventos-> fechafin}}" />
+                <input type="Date" class="form-control" name="fechafin" value="{{ $eventos-> fechafin}}" />
             </div>
             <button type="submit" class="btn btn-block btn-success">Actualizar evento</button>
         </form>

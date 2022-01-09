@@ -106,7 +106,7 @@ class eventsController extends Controller
             'fechainicio' => 'required|max:255|date',
             'fechafin' => 'required|max:255|date',
         ]);
-        Event::whereId($id)->update($updateData);
+        events::whereId($id)->update($updateData);
         return redirect()->route('events.index')->with('success', 'Evento actualizado con éxito');
     }
 
