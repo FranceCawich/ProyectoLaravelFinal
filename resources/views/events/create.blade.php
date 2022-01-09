@@ -37,12 +37,16 @@
             <div class="form-group">
                 <label for="text">fechaInicio</label>
                 <input type="date" class="form-control" name="fechaInicio" />
-
-                <label for="text">fechaFin</label>
+            </div>
+            <div> <label for="text">fechaFin</label>
                 <input type="date" class="form-control" name="fechaFin" />
             </div>
             <button type="submit" class="btn btn-block btn-success">Crear evento</button>
         </form>
     </div>
+
 </div>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 @endsection
