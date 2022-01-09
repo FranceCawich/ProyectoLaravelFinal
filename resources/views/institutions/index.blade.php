@@ -11,7 +11,7 @@
 
 
 <br>
-<a href="{{ route('institutionTypes.create') }}" class="btn btn-success">agregar institution</a>
+<a href="{{route('institutions.create')}}" class="btn btn-success">agregar institution</a>
 <div></div>
 <br>
 <br>
@@ -30,17 +30,21 @@
         </tr>
     </thead>
     <tbody>
-        <tr @foreach ($institutionTypes as $key=> $evt)
+        <tr @foreach ($institutcion as $key=>$evt)
             <th scope="row">{{$key}}</th>
-            <td>{{ $evt->NombreCorto }}</td>
-            <td>{{ $evt->NombreLargo }}</td>
-            <td>{{ $evt->institutionTypeId }}</td>
+            <td>{{ $evt['NombreCorto']}}</td>
+            <td>{{ $evt['NombreLargo']}}</td>
+            <td>{{ $evt['institution_type_id']}}</td>
+            <td>{{ $evt['tipo']}}</td>
+
+
+
 
             <td>
-                <a href="{{ route('institution.edit', $evt->id) }}" class="btn btn-warning">Actualizar</a>
+                <a href="{{route('institutions.edit', $evt->id) }}" class="btn btn-warning">Actualizar</a>
             </td>
             <td>
-                <form action="{{ route('institution.destroy', $evt->id) }}" method="POST">
+                <form action="{{route('institutions.destroy', $evt->id) }}" method="POST">
                     @csrf
                     @method('DELETE')
                     <button class="btn btn-danger" type="submit"><i class="bi bi-trash"></i>borrar</button>
