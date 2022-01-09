@@ -14,7 +14,17 @@ class institutionController extends Controller
     public function index()
     {
         //
-        return view('insitution.index', ['institution' => $institution]);
+        ///return view('insitution.index', ['institution' => $institution]);
+
+///inner joint  
+        $institution = \DB::table('institution')
+            ->join('institution_type', 'institution.institution_type_id', '=', 'institution_type.id')
+            ->select('institution.*', 'institution_type.name as type_name')
+            ->get();
+        return view('institution.index', ['institution' => $institution]);
+       
+        
+        
     }
 
     /**
