@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\institutions;
-
+use App\Models\institutionTypes;
 class institutionController extends Controller
 {
     /**
@@ -33,7 +33,8 @@ class institutionController extends Controller
     public function create()
     {
         //
-        return view('institutions.create');
+        $institutcion = institutionTypes::all();
+        return view('institutions.create', ['institutcion' => $institutcion]);
 
 
         
@@ -58,6 +59,11 @@ class institutionController extends Controller
         //
         $institutcion = institutions::create($storeData);
         return redirect()->route('institutions.index')->with('success', 'Evento actualizado con éxito');
+
+        
+        
+    
+        
         
 
      

@@ -34,12 +34,17 @@
                 <input type="text" class="form-control" name="NombreCorto" />
             </div>
             <br>
-            <div class="form-group">
-                <label for="text">InstiutionTypeID</label>
-                <input type="text" class="form-control" name="institutionTypeID" />
+
+
+            <div class="mb-3 form-lable">
+                <label for="" class="form-label">Tipo</label>
+                <select name="institution_types_id" id="institution_types_id" class="form-control" tabindex="3">
+
+                    @foreach($institutcion as $ti)
+                    <option value="{{$ti->id}}">{{$ti-> tipo}}</option>
+                    @endforeach
+                </select>
             </div>
-
-
 
             <button type="submit" class="btn btn-block btn-success">agregar Participantes</button>
         </form>
