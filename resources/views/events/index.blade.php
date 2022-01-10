@@ -6,7 +6,7 @@
     width: 10%;
 }
 </style>
-<h1>Lista de eventos realizados </h1>
+
 
 
 
@@ -14,8 +14,7 @@
 <a href="{{ route('events.create') }}" class="btn btn-success">Crear evento</a>
 <div></div>
 <br>
-<br>
-<br>
+<h1>Lista De Eventos Realizados </h1>
 
 <table class="table">
     <thead>

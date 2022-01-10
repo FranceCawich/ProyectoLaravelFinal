@@ -10,7 +10,7 @@
 
 <div class="card push-top">
     <div class="card-header">
-        Actualizar Registro
+        Actualizar Registro De Eventos
     </div>
 
     <div class="card-body">

@@ -8,9 +8,10 @@
 }
 </style>
 
+
 <div class="card push-top">
     <div class="card-header">
-        Agregar nuevo evento
+        Agregar Un Nuevo Evento
     </div>
 
     <div class="card-body">

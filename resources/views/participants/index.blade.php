@@ -6,17 +6,16 @@
     width: 10%;
 }
 </style>
-<h1>lista de participantes</h1>
+
 
 
 
 <br>
-<a href="{{ route('participants.create') }}" class="btn btn-success">agregar Participantes</a>
+<a href="{{ route('participants.create') }}" class="btn btn-success">Agregar Participantes</a>
 <div></div>
 <br>
-<br>
-<br>
 
+<h1>lista de participantes</h1>
 <table class="table">
     <thead>
         <tr>
