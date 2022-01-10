@@ -53,6 +53,7 @@ class institutionController extends Controller
             'NombreLargo' => 'required|string|max:255',
             'institution_type_id' => 'required|string|max:255'
             
+            
         ]);
 
         
