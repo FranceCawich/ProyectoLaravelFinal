@@ -11,6 +11,6 @@ class institutionTypes extends Model
 
     protected $fillable = ['tipo',];
     public function participants(){
-        return $this->belongsToMany(Participant::class);
+        ///return $this->belongsToMany(Participant::class);
     }
 }

@@ -96,6 +96,10 @@ class institutionController extends Controller
     public function edit($id)
     {
         //
+        $institutcion = institutions::find($id);
+        $institutcionType = institutionTypes::all();
+        return view('institutions.edit', ['institutcion' => $institutcion, 'institutcionType' => $institutcionType]);
+        
     }
 
     /**
@@ -108,6 +112,16 @@ class institutionController extends Controller
     public function update(Request $request, $id)
     {
         //
+        $updateData = $request->validate([
+            'NombreCorto' => 'required|string|max:255',
+            'NombreLargo' => 'required|string|max:255',
+            'institution_type_id' => 'required|string|max:255'
+            
+            
+        ]);
+        institutions::whereId($id)->update($updateData);
+        return redirect()->route('institutions.index')->with('success', 'Evento actualizado con éxito');
+
     }
 
     /**
@@ -119,5 +133,9 @@ class institutionController extends Controller
     public function destroy($id)
     {
         //
+        $institutcion = institutions::find($id);
+        $institutcion->delete();
+        return redirect()->route('institutions.index')->with('success', 'Evento actualizado con éxito');
+
     }
 }

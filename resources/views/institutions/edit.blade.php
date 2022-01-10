@@ -23,30 +23,28 @@
             </ul>
         </div><br />
         @endif
-        <form method="post" action="{{ route('institution.update', $institutionTypes -> id) }}">
+        <form method="post" action="{{ route( 'institutions.update', $institutcion -> id) }}">
             <div class="form-group">
                 @csrf
                 @method('PATCH')
                 <label for="name">NombreLargo</label>
-                <input type="text" class="form-control" name="NombreLargo" value="{{ $institution-> NombreLargo }}" />
+                <input type="text" class="form-control" name="NombreLargo" value="{{ $institutcion-> NombreLargo }}" />
             </div>
             <br>
             <div class="form-group">
                 <label for="email">NombreCorto</label>
-                <input type="text" class="form-control" name="NombreCorto" value="{{ $institution-> NombreCorto }}" />
+                <input type="text" class="form-control" name="NombreCorto" value="{{ $institutcion-> NombreCorto }}" />
             </div>
             <br>
             <div class="form-group">
                 <label for="email">institutionTypeId</label>
                 <input type="text" class="form-control" name="institutionTypeId"
-                    value="{{ $institution-> institutionTypeId }}" />
+                    value="{{ $institutcion-> institutionTypeId }}" />
             </div>
 
             <button type="submit" class="btn btn-block btn-success">Actualizar evento</button>
         </form>
     </div>
 </div>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
 @endsection
