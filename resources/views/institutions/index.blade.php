@@ -1,4 +1,5 @@
 @extends('layouts.app')
+@extends('layouts.script')
 @section('content')
 
 <style>
@@ -22,6 +23,8 @@
             <th scope="col">Nombrelargo</th>
             <th scope="col">institutionTypeId</th>
 
+             <th scope="col">TIPO</th>
+            
             <th scope="col">Actulizar</th>
             <th scope="col">Eliminar</th>
         </tr>
@@ -52,5 +55,6 @@
         </tr @endforeach>
     </tbody>
 </table>
+<!-- Scripts -->
 
 @endsection

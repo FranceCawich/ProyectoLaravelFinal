@@ -1,4 +1,5 @@
 @extends('layouts.app')
+@extends('layouts.script')
 
 @section('content')
 
@@ -23,7 +24,7 @@
             </ul>
         </div><br />
         @endif
-        <form method="post" action="{{ route( 'institutions.update', $institutcion -> id) }}">
+        <form method="post" action="{{ route('institutions.update', $institutcion -> id) }}">
             <div class="form-group">
                 @csrf
                 @method('PATCH')
@@ -38,8 +39,8 @@
             <br>
             <div class="form-group">
                 <label for="email">institutionTypeId</label>
-                <input type="text" class="form-control" name="institutionTypeId"
-                    value="{{ $institutcion-> institutionTypeId }}" />
+                <input type="text" class="form-control" name="institution_type_id"
+                    value="{{ $institutcion-> institution_type_id}}" />
             </div>
 
             <button type="submit" class="btn btn-block btn-success">Actualizar evento</button>

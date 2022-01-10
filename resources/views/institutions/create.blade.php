@@ -1,4 +1,6 @@
 @extends('layouts.app')
+@extends('layouts.script')
+
 
 @section('content')
 

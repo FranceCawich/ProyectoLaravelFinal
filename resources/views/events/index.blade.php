@@ -1,4 +1,5 @@
 @extends('layouts.app')
+@extends('layouts.script')
 @section('content')
 
 <style>
@@ -50,5 +51,6 @@
         </tr @endforeach>
     </tbody>
 </table>
+<!-- Scripts -->
 
 @endsection
