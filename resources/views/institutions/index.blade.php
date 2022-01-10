@@ -6,16 +6,13 @@
     width: 10%;
 }
 </style>
-<h1>Lista de eventos realizados </h1>
-
 
 
 <br>
 <a href="{{route('institutions.create')}}" class="btn btn-success">agregar institution</a>
 <div></div>
 <br>
-<br>
-<br>
+<h1>Lista de institutiones </h1>
 
 <table class="table">
     <thead>
@@ -31,7 +28,7 @@
     </thead>
     <tbody>
         <tr @foreach ($institutcion as $key=>$evt)
-            <th scope="row">{{$key}}</th>
+            <th scope="row"></th>
             <td>{{ $evt['NombreCorto']}}</td>
             <td>{{ $evt['NombreLargo']}}</td>
             <td>{{ $evt['institution_type_id']}}</td>

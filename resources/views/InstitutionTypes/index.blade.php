@@ -6,30 +6,24 @@
     width: 10%;
 }
 </style>
-<h1>Lista de eventos realizados </h1>
-
-
 
 <br>
 <a href="{{ route('institutionTypes.create') }}" class="btn btn-success">agregar Tipo de institution</a>
 <div></div>
-<br>
-<br>
-<br>
+<br><h1>Lista Tipos de Institutiones </h1>
 
 <table class="table">
     <thead>
         <tr>
-
+     
             <th scope="col">tipo</th>
-
             <th scope="col">Actulizar</th>
             <th scope="col">Eliminar</th>
         </tr>
     </thead>
     <tbody>
         <tr @foreach ($institutionTypes as $key=> $evt)
-            <th scope="row">{{$key}}</th>
+            <th scope="row"></th>
             <td>{{ $evt->tipo }}</td>
 
             <td>

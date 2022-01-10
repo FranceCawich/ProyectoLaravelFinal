@@ -7,6 +7,11 @@ use App\Models\institutions;
 use App\Models\institutionTypes;
 class institutionController extends Controller
 {
+   //authentication
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
     /**
      * Display a listing of the resource.
      *

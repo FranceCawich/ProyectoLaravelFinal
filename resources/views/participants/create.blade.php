@@ -7,13 +7,11 @@
     margin-top: 50px;
 }
 </style>
+<br>
+<a href="{{ route('participants.index') }}" class="btn btn-success">Regresar</a>
+<br>
+<h1>Ingresar nuevo Participante</h1>
 
-<div class="card push-top">
-    <div class="card-header">
-        agregar unparticipante
-    </div>
-
-    <div class="card-body">
         @if ($errors->any())
         <div class="alert alert-danger">
             <ul>

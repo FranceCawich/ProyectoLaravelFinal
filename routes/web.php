@@ -21,6 +21,8 @@ Route::get('/', function () {
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');
 })->name('dashboard');
+
+
 Route::resource('events', 'App\Http\Controllers\eventsController');
 Route::resource('participants', 'App\Http\Controllers\participantsController');
 Route::resource('institutionTypes', 'App\Http\Controllers\institutionTypesController');

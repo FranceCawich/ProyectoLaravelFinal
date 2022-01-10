@@ -8,12 +8,11 @@
 }
 </style>
 
-<div class="card push-top">
-    <div class="card-header">
-        Agregar nuevo evento
-    </div>
+<br>
+<a href="{{ route('institutionTypes.index') }}" class="btn btn-success">Regresar</a>
+<br>
+<h1>Insertar Institution</h1>
 
-    <div class="card-body">
         @if ($errors->any())
         <div class="alert alert-danger">
             <ul>

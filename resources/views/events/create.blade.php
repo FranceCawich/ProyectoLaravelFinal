@@ -8,13 +8,11 @@
 }
 </style>
 
+<br>
+<a href="{{ route('events.index') }}" class="btn btn-success">Regresar</a>
+<br>
+<h1>Ingresar nuevo Evento</h1>
 
-<div class="card push-top">
-    <div class="card-header">
-        Agregar Un Nuevo Evento
-    </div>
-
-    <div class="card-body">
         @if ($errors->any())
         <div class="alert alert-danger">
             <ul>
